@@ -1,5 +1,7 @@
-import './globals.css'
+import Header from '@/components/header'
+import '../styles/global.css'
 import { Inter } from 'next/font/google'
+import PromptInput from '@/components/PromptInput'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Header/>
+        <PromptInput/>
+                {children}
+        
+        </body>
     </html>
   )
 }
