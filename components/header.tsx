@@ -33,7 +33,7 @@ function header() {
           href="https://github.com/victor-praise/AI-image-generator"
           className="px-2 font-light"
         >
-          Github Repo
+          Github Repository
         </Link>
         </div>
     </header>
