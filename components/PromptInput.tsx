@@ -21,7 +21,7 @@ function PromptInput() {
             <textarea
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Enter a prompt..."
+            placeholder={suggestion||"Enter a prompt..."}
             className="flex-1 p-4 outline-none rounded-md" />
 
             <button type="submit" 
