@@ -31,7 +31,7 @@ function PromptInput() {
                   : "text-gray-300 cursor-not-allowed"
               } font-bold`}
             disabled={!input}>
-                Generate image
+                Generate image from gpt
             </button>
 
             <button 
