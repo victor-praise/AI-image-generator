@@ -42,7 +42,7 @@ function PromptInput() {
             <button 
             type="button"
             onClick={mutate}
-            className={`p-4 bg-white text-violet-500 border-none transition-colors duration-200 rounded-b-md md:rounded-r-md md:rounded-bl-none font-bold`}>New Suggestion</button>
+            className={`p-4 bg-white text-violet-500 border-none transition-colors duration-200 rounded-b-md md:rounded-r-md md:rounded-bl-none font-bold`}>New Suggestion from GPT</button>
         </form>
         {input && (
         <p className="italic pt-2 pl-2 font-light">
