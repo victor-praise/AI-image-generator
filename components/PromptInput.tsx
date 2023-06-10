@@ -38,7 +38,7 @@ function PromptInput() {
 
             <button 
             type="button"
-            className={`p-4 bg-violet-400 text-white transition-colors duration-200 font-bold disabled:text-gray-300 disabled:cursor-not-allowed disabled:bg-gray-400`}>Use Suggestion</button>
+            className={`p-4 bg-violet-400 text-white transition-colors duration-200 font-bold disabled:text-gray-300 disabled:cursor-not-allowed disabled:bg-gray-400`}>Use Suggestion from GPT</button>
             <button 
             type="button"
             onClick={mutate}
