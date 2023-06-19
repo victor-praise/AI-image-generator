@@ -1,21 +1,17 @@
-import { NextResponse } from "next/server";
-
-export async function POST(request: Request) {
-  const res = await request.json(); // res now contains body
-  const prompt = res.prompt;
-
+export async function GET(request: Request) {
   const response = await fetch(
-    "http://localhost:7071/api/generateImage",
+    "http://localhost:7071/api/getImages",
     {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ prompt }),
+      cache: "no-store",
     }
   );
 
-  const textData = await response.text();
+  const blob = await response.blob();
+  const textData = await blob.text();
 
-  return NextResponse.json(textData);
+  const data = JSON.parse(textData);
+
+  return new Response(JSON.stringify(data), {
+    status: 200,
+  });
 }
