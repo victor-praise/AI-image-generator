@@ -1,12 +1,11 @@
-import Image from 'next/image'
+import Images from "../components/images";
 
-export default function Home() {
+async function HomePage() {
   return (
-    <main>
-      <span className='text-red-500'>
-        page goes here
-      </span>
-       
-    </main>
-  )
+    <div className="mx-0 md:10">
+      <Images />
+    </div>
+  );
 }
+
+export default HomePage;
