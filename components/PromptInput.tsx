@@ -85,7 +85,7 @@ function PromptInput() {
                   : "text-gray-300 cursor-not-allowed"
               } font-bold`}
             disabled={!input}>
-                Generate
+                Generate from chatGpt
             </button>
 
             <button 
