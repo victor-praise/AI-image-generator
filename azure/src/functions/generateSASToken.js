@@ -1,7 +1,7 @@
 const { app } = require("@azure/functions");
 const generateSASToken = require("../../lib/generateSASToken");
 
-app.http("generateSASToken", {
+app.http("generatesastoken", {
   methods: ["GET"],
   authLevel: "anonymous",
   handler: async (request, context) => {

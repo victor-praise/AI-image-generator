@@ -50,7 +50,9 @@ function PromptInput() {
       const data = await res.json();
   
       if (data.error) {
-        toast.error(data.error);
+        toast.error(data.error,{
+          id:notification
+        });
       } else {
         toast.success(`Your AI Art has been Generated!`, {
           id: notification,
@@ -85,17 +87,17 @@ function PromptInput() {
                   : "text-gray-300 cursor-not-allowed"
               } font-bold`}
             disabled={!input}>
-                Generate from chatGpt
+                Generate
             </button>
 
             <button 
             type="button"
             onClick={() => submitPrompt(true)}
-            className={`p-4 bg-violet-400 text-white transition-colors duration-200 font-bold disabled:text-gray-300 disabled:cursor-not-allowed disabled:bg-gray-400`}>Use chatGpt Suggestion</button>
+            className={`p-4 bg-violet-400 text-white transition-colors duration-200 font-bold disabled:text-gray-300 disabled:cursor-not-allowed disabled:bg-gray-400`}>Use Suggestion</button>
             <button 
             type="button"
             onClick={mutate}
-            className={`p-4 bg-white text-violet-500 border-none transition-colors duration-200 rounded-b-md md:rounded-r-md md:rounded-bl-none font-bold`}>New Suggestion from GPT</button>
+            className={`p-4 bg-white text-violet-500 border-none transition-colors duration-200 rounded-b-md md:rounded-r-md md:rounded-bl-none font-bold`}>New Suggestion</button>
         </form>
         {input && (
         <p className="italic pt-2 pl-2 font-light">
