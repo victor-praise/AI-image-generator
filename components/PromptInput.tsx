@@ -54,7 +54,7 @@ function PromptInput() {
           id:notification
         });
       } else {
-        toast.success(`Your AI Art has been Generated!`, {
+        toast.success(`Your AI Art has been Generated!!!`, {
           id: notification,
         });
       }
